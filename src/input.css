@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: lightgray;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: red;
+}
+
+.videos {
+  flex: 1;
+}
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.gradient-cover {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 1) 50%
+  );
+}
+
+.react-player-container {
+  flex: 5;
+  aspect-ratio: 16 / 9;
+}
